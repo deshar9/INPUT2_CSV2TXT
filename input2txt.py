@@ -6,7 +6,7 @@ def main():
     reader = csv.reader(y, delimiter=',')
 
     for k in reader:
-        x = open('Master Config.txt', 'r')
+        x = open('Master Config.txt','r')
         print (k[0])
         z = open('{0}.txt'.format(k[0]),'w')
         line = 1
