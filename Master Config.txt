@@ -1,0 +1,27 @@
+system {
+    hostname vMX1;
+    services ssh root-login allow;
+}
+interfaces {
+    ge-0/0/0 {
+        unit 0 {
+             family inet {
+                 address 192.168.97.1/24;
+             }
+        }
+    }
+    ge-0/0/2 {
+        unit 0 {
+             family inet {
+                 address 192.168.98.1/24;
+             }
+        }
+    }
+    ge-0/0/3 {
+        unit 0 {
+             family inet {
+                 address 192.168.99.1/24;
+             }
+        }
+    }
+}
